@@ -18,7 +18,7 @@ import com.javainuse.model.Company;;
 @RestController
 public class TestControllerCompanyB {
 
-	@RequestMapping(value = "/companyB", method = RequestMethod.GET)
+	@RequestMapping(value = "/DEF", method = RequestMethod.GET)
 	public Company firstPage() {
 		Company cmp = new Company();
 		cmp.setName("DEF");
@@ -27,7 +27,7 @@ public class TestControllerCompanyB {
 		cmp.setSharesDoublesWhen(800);
 		return cmp;
 	}
-	@RequestMapping(value = "/companyB", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/DEF", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseUpgrade> update(@RequestBody ResponseUpgrade response) {
 //	    ResponseUpgrade response= null;
 		if (response != null) {
@@ -65,7 +65,6 @@ public class TestControllerCompanyB {
 				st3.executeUpdate(t);
 				st3.close();
 				conn.close();
-			
 	    	} catch (SQLException e) {
 	    
 				// TODO Auto-generated catch block

@@ -18,7 +18,7 @@ public class jdbcConnection {
 		System.out.println("MySQL JDBC Driver Registered!");
 
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/company","root","trupti");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/company","root","");
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
 			e.printStackTrace();
