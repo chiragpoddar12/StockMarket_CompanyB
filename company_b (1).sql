@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3307
--- Generation Time: Nov 27, 2017 at 08:03 AM
+-- Generation Time: Dec 07, 2017 at 11:36 AM
 -- Server version: 5.7.20
 -- PHP Version: 7.1.11
 
@@ -39,8 +39,8 @@ CREATE TABLE `company_b` (
 --
 
 INSERT INTO `company_b` (`id`, `name`, `Number_of_shares`) VALUES
-(1, 'jigs', 40),
-(2, 'lad', 30);
+(1, 'alice', 30),
+(2, 'bob', 20);
 
 --
 -- Indexes for dumped tables
